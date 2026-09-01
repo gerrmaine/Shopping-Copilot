@@ -1,0 +1,10 @@
+# Core dependencies. Python 3.10+ (stdlib: sqlite3 with FTS5, which ships
+# with the standard CPython build used here).
+numpy>=1.26,<3
+scikit-learn>=1.3,<2
+
+# Optional: only needed if AGENT_USE_ST=1 is set to enable the local
+# sentence-transformer dense-embedding backend (see README "Model Choice").
+# The agent runs fully offline without it -- omit if network access to the
+# Hugging Face Hub is unavailable for the one-time model download.
+# sentence-transformers>=3.0,<4
